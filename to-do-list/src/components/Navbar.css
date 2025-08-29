@@ -1,5 +1,21 @@
 nav {
     background-color: #333;
+    position: fixed;      /* Make navbar fixed at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;        /* Ensure it stays above other content */
+    height: 60px;         /* Set a fixed height */
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    padding: 0 30px;
+}
+
+.navbar-container {
+    width: 100%;
 }
 
 ul {
@@ -15,8 +31,13 @@ li {
 a {
     color: white;
     text-decoration: none;
+    margin: 0 25px;
+    font-size: larger;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 
 a:hover {
-    text-decoration: underline;
+    color: #007bff;
+    opacity: 1;
+    transition: opacity 0.5s ease;
 }
