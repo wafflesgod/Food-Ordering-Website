@@ -1,24 +1,23 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import ToDo from './components/to-do'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
-import { faGithub } from '@fortawesome/free-brands-svg-icons'
+
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import About from './components/About'
 
 function App() {
-
   return (
-    <>
-      <div>
-        <h1>Hello</h1>
-        <FontAwesomeIcon icon={faGithub} />
-        <FontAwesomeIcon icon={faCoffee} size="2x" />
-        <ToDo/>
-    </div>
-    </>
-  )
+    <Router>
+      <Navbar />
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          {/* Add more routes as needed */}
+        </Routes>
+    </Router>
+  );
 }
 
-export default App
+export default App;
