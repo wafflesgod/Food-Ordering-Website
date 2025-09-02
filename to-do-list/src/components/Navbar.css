@@ -45,3 +45,7 @@ a:hover {
     opacity: 1;
     transition: opacity 0.5s ease;
 }
+
+.faHouse:hover {
+    display: fade;
+}
