@@ -1,8 +1,8 @@
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   
-  color-scheme: light dark;
-  background-color: #5D688A;
+  /*color-scheme: light dark;*/
+  background-color: #FFF2EF;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,7 +13,6 @@
 #root {
   width: 100%;
   text-align: center;
-  background-color: #FFF2EF;
 }
 
 .logo {
