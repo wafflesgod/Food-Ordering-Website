@@ -18,6 +18,10 @@
     font-weight: bold;
 }
 
+.navbar {
+    padding: 0 20px;
+}
+
 .navbar-container {
     width: 100%;
 }
@@ -35,7 +39,7 @@ li {
 a {
     color: white;
     text-decoration: none;
-    margin: 0 25px;
+    margin: 0 15px;
     font-size: larger;
     transition: transform 0.3s ease, color 0.3s ease;
 }
@@ -44,8 +48,4 @@ a:hover {
     color: #007bff;
     opacity: 1;
     transition: opacity 0.5s ease;
-}
-
-.faHouse:hover {
-    display: fade;
 }
