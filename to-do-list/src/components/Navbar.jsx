@@ -9,6 +9,7 @@ import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import { faClipboard } from "@fortawesome/free-solid-svg-icons";
 import { faCircleInfo } from "@fortawesome/free-solid-svg-icons";
 import { faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
@@ -29,6 +30,9 @@ const Navbar = () => {
           </li>
           <li>
             <Link to="/contact"><FontAwesomeIcon icon={faPhone} />Contact</Link>
+          </li>
+          <li style={{border: "1px solid white", borderRadius: "6px", padding: "10px 5px"}}>
+            <Link to="/home"><FontAwesomeIcon icon={faCartShopping} />Cart</Link>
           </li>
         </ul>
       </nav>
