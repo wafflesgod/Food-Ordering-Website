@@ -15,7 +15,7 @@ import Footer from "./Footer";
 
 function App() {
   return (
-    <div>
+    <div style={{padding: "0 15px"}}>
       <Router>
         <Navbar />
         <div style={{ flex: "1" }}>

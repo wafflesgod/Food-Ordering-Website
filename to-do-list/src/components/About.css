@@ -8,3 +8,48 @@ h1{
     margin-bottom: 20px;
     text-align: justify;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /*Create 2 equal columns*/
+    grid-template-rows: auto; /*rows adjust based on content*/
+    gap: 15px 20px; /*space between grid item*/
+    font-size: 25px;
+}
+
+.grid-container ul {
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 20px;
+    margin-bottom: 40px;
+}
+
+.grid-container li {
+    display: list-item;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*Create 3 equal columns*/
+    grid-template-rows: auto; /*rows adjust based on content*/
+    gap: 0 20px; /*space between grid item*/
+    font-size: 25px;
+}
+
+.words {
+    text-align: left;
+}
+
+.fashake {
+    --fa-animation-duration: 2.5s;
+}
+
+.grid-container > div {
+    border: 2px solid whitesmoke;
+    border-radius: 12px;
+    padding: 20px;
+    background: #FFDBB6;
+    box-sizing: border-box;
+}

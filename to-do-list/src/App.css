@@ -2,7 +2,7 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   
   color-scheme: light dark;
-  background-color: #FFE8DB;
+  background-color: #5D688A;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,7 +13,7 @@
 #root {
   width: 100%;
   text-align: center;
-  background-color: #FFE8DB;
+  background-color: #FFF2EF;
 }
 
 .logo {
