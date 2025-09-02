@@ -1,26 +1,32 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Home from './components/Home'
-import About from './components/About'
-import Footer from './Footer'
+import { useState } from "react";
+import reactLogo from "./assets/react.svg";
+import "./App.css";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Footer from "./Footer";
 
 function App() {
   return (
     <div>
-        <Router>
+      <Router>
         <Navbar />
-            <div style={{flex: "1"}}>
-                <Routes>
-                    <Route path="/" element={<Navigate to="/home" />} />
-                    <Route path="/home" element={<Home />} />
-                    <Route path="/about" element={<About />} />
-                </Routes>
-            </div>
-            <Footer />
-        </Router>
+        <div style={{ flex: "1" }}>
+          <Routes>
+            <Route path="/" element={<Navigate to="/home" />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </div>
+        <Footer />
+      </Router>
     </div>
   );
 }
