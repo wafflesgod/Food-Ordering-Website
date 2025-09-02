@@ -6,7 +6,10 @@ import About from "./About"
 
 const Navbar = () => {
     return (
-        <div className="navbar-container">
+        <div className="navbar-main">
+            <div className="navbar-logo">
+                <Link to="/home">(logo) YumYum</Link>
+            </div>
             <nav className="navbar">
                 <ul className="nav-links">
                     <li><Link to="/home">Home</Link></li>
@@ -16,7 +19,6 @@ const Navbar = () => {
                 </ul>
             </nav>
         </div>
-        
     );
 };
 

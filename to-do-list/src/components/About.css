@@ -1,0 +1,10 @@
+h1{
+    font-size: 3rem;
+}
+
+.para {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+}

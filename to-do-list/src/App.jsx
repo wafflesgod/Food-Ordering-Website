@@ -1,23 +1,27 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import './App.css'
-
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './components/Home'
 import About from './components/About'
-import { Navigate } from 'react-router-dom'
+import Footer from './Footer'
 
 function App() {
   return (
-    <Router>
-      <Navbar />
-        <Routes>
-          <Route path="/" element={<Navigate to="/home" />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-        </Routes>
-    </Router>
+    <div>
+        <Router>
+        <Navbar />
+            <div style={{flex: "1"}}>
+                <Routes>
+                    <Route path="/" element={<Navigate to="/home" />} />
+                    <Route path="/home" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                </Routes>
+            </div>
+            <Footer />
+        </Router>
+    </div>
   );
 }
 

@@ -1,17 +1,21 @@
-nav {
+.navbar-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #333;
-    position: fixed;      /* Make navbar fixed at the top */
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1000;        /* Ensure it stays above other content */
-    height: 60px;         /* Set a fixed height */
-    display: flex;
-    align-items: center;
+    z-index: 1000;
+    height: 60px;
+    padding: 0 30px;
 }
 
-.navbar {
-    padding: 0 30px;
+.navbar-logo {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .navbar-container {
