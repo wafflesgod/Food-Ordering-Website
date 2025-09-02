@@ -3,7 +3,7 @@ import "./About.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRotate } from "@fortawesome/free-solid-svg-icons";
 
-export default function Home() {
+export default function About() {
   return (
     <div>
         <h1>About Us</h1>

@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import Home from "./Home";
 import About from "./About";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faRaspberryPi } from "@fortawesome/free-brands-svg-icons";
 
 const Navbar = () => {
   return (
     <div className="navbar-main">
       <div className="navbar-logo">
-        <Link to="/home">(logo) YumYum</Link>
+        <Link to="/home"><FontAwesomeIcon icon={faRaspberryPi} flip />YumYum</Link>
       </div>
       <nav className="navbar">
         <ul className="nav-links">
