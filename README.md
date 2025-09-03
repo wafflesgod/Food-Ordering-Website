@@ -13,14 +13,14 @@ Peach: #F7A5A5 //rgb(247, 165, 165) <br>
 Light Yellow: #FFDBB6 //rgb(255, 219, 182) <br>
 Light Peach: #FFF2EF //rgb(255, 242, 239) <br>
 
-# Clone the repository
+## Clone the repository
 git clone https://github.com/wafflesgod/Food-Ordering-Website
 
-# Navigate to the project directory
+## Navigate to the project directory
 cd Food-Ordering-Website
 
-# Install dependencies
+## Install dependencies
 npm install
 
-# Run the project
+## Run the project
 npm run dev @ npx vite
