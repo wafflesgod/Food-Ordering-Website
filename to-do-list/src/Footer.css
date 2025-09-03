@@ -1,10 +1,20 @@
 footer {
-    display: 0;
-    align-items: center;
+    text-align: left;
     background-color: #333;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 60px;
-    padding: 0 30px;
+    height: auto;
+    padding: 1rem;
+    color: white;
+    margin-top: 0px; /* Optional: adds space above footer */
+}
+
+.foot-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*Create 3 equal columns*/
+    grid-template-rows: auto; /*rows adjust based on content*/
+    gap: 0 20px; /*space between grid item*/
+}
+
+.link {
+    margin: 0px;
 }

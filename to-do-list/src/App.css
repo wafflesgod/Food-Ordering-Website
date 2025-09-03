@@ -11,8 +11,8 @@
 }
 
 #root {
-  width: 100%;
   text-align: center;
+  margin-top: 70px;
 }
 
 .logo {
@@ -35,6 +35,9 @@
 }
 
 /* In App.css or index.css */
-body, #root, .App {
+body, .App {
     padding-top: 25px; /* Same as navbar height */
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }

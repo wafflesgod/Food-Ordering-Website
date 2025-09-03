@@ -53,3 +53,9 @@ h1{
     background: #FFDBB6;
     box-sizing: border-box;
 }
+
+.grid-container2 > div {
+    border-radius: 12px;
+    padding: 0px;
+    box-sizing: border-box;
+}

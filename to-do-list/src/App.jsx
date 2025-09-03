@@ -15,7 +15,6 @@ import Footer from "./Footer";
 
 function App() {
   return (
-    <div style={{padding: "0 15px"}}>
       <Router>
         <Navbar />
         <div style={{ flex: "1" }}>
@@ -28,7 +27,6 @@ function App() {
         </div>
         <Footer />
       </Router>
-    </div>
   );
 }
 
