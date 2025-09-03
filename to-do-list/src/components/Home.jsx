@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 export default function Home() {
   return (
     <div>
-        <div className="top-container">
+        <div className="top-container" style={{marginTop: "-10px"}}>
             <h1>Delicious Food, Delivered Fast</h1>
             <p style={{fontSize: "18px", paddingBottom: "10px"}}>Experience the finest cuisine from the comfort of your home. <br/> Fresh ingredients, expert chefs, and lightning-fast delivery.</p>
             <div className="button-container">
