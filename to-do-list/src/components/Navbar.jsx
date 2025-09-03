@@ -15,21 +15,21 @@ const Navbar = () => {
   return (
     <div className="navbar-main">
       <div className="navbar-logo">
-        <Link to="/home"><FontAwesomeIcon icon={faRaspberryPi} flip />YumYum</Link>
+        <Link to="/home" style={{fontSize: "1.8rem"}}><FontAwesomeIcon icon={faRaspberryPi} flip />YumYum</Link>
       </div>
       <nav className="navbar">
         <ul className="nav-links">
           <li>
-            <Link to="/home"><FontAwesomeIcon icon={faHouse} />Home</Link>
+            <Link to="/home" className="logo"><FontAwesomeIcon icon={faHouse} />Home</Link>
           </li>
           <li>
-            <Link to="/menu"><FontAwesomeIcon icon={faClipboard} />Menu</Link>
+            <Link to="/menu" className="logo"><FontAwesomeIcon icon={faClipboard} />Menu</Link>
           </li>
           <li>
-            <Link to="/about"><FontAwesomeIcon icon={faCircleInfo} />About</Link>
+            <Link to="/about" className="logo"><FontAwesomeIcon icon={faCircleInfo} />About</Link>
           </li>
           <li>
-            <Link to="/contact"><FontAwesomeIcon icon={faPhone} />Contact</Link>
+            <Link to="/contact" className="logo"><FontAwesomeIcon icon={faPhone} />Contact</Link>
           </li>
           <li style={{border: "1px solid white", borderRadius: "6px", padding: "10px 5px"}}>
             <Link to="/home"><FontAwesomeIcon icon={faCartShopping} />Cart</Link>
