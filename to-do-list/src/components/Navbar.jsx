@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
-import Home from "./Home";
-import About from "./About";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRaspberryPi } from "@fortawesome/free-brands-svg-icons";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";

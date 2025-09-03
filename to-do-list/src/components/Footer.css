@@ -27,7 +27,7 @@ a.link {
 }
 
 a.link:hover {
-    color: red;
+    color: #5682B1;
     opacity: 1;
     transition: opacity 0.5s ease;
 }
