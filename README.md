@@ -23,4 +23,4 @@ Light Peach: #FFF2EF //rgb(255, 242, 239) <br>
 **npm install**
 
 ## Run the project
-**npm run dev @ npx vite**
+**npm run dev OR npx vite**
