@@ -1,0 +1,37 @@
+footer {
+    text-align: left;
+    background-color: #333;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    color: white;
+    margin-top: 0px; /* Optional: adds space above footer */
+}
+
+.foot-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /*Create 3 equal columns*/
+    grid-template-rows: auto; /*rows adjust based on content*/
+    gap: 0 20px; /*space between grid item*/
+}
+
+footer, .foot-container {
+    box-sizing: border-box;
+}
+
+.link {
+    margin: 0px;
+}
+
+a.link {
+    color: white;
+    text-decoration: none;
+    font-size: larger;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a.link:hover {
+    color: #5682B1;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
