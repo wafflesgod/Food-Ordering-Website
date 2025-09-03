@@ -88,6 +88,7 @@ export default function Contact() {
               <input
                 type="text"
                 id="name"
+                name="name"
                 placeholder="Your Full Name"
                 value={formData.name}
                 onChange={handleChange}
@@ -100,15 +101,15 @@ export default function Contact() {
                 type="email"
                 id="email"
                 name="email"
-                placholder="your@email.com"
+                placeholder="your@email.com"
                 value={formData.email}
-                onchange={handleChange}
+                onChange={handleChange}
                 required
               />
             </div>
             <div className="form-group">
               <label htmlFor="subject">Subject</label>
-              <select>
+              <select id="subject" name="subject" value={formData.subject} onChange={handleChange}>
                 <option value="General Inquiry">General Inquiry</option>
                 <option value="Customer Support">Customer Support</option>
                 <option value="Feedback">Feedback</option>
@@ -124,10 +125,11 @@ export default function Contact() {
                 placeholder="Tell us how we can help you"
                 rows="5"
                 value={formData.message}
-                onchange={handleChange}
+                onChange={handleChange}
                 required
               ></textarea>
             </div>
+            <button type="submit" className="submit-btn">Send Message</button>
           </form>
         </div>
       </div>
