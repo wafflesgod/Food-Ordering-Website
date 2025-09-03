@@ -7,8 +7,8 @@ hello <br>
 hhhhh
 hahahah
 
-Color Platte: https://colorhunt.co/palette/0000005682b1739ec9ffe8db <br>
-Black: #000000 //rgb(0, 0, 0) <br>
-Darker blue: #5682B1 //rgb(86, 130, 177) <br>
-Lighter blue: #739EC9 //rgb(115, 158, 201) <br>
-Peach: #FFE8DB //rgb(255, 232, 219) <br>
+Color Platte: https://colorhunt.co/palette/5d688af7a5a5ffdbb6fff2ef <br>
+Navy: #5D688A //rgb(93, 104, 138) <br>
+Darker blue: #F7A5A5 //rgb(247, 165, 165) <br>
+Lighter blue: #FFDBB6 //rgb(255, 219, 182) <br>
+Peach: #FFF2EF //rgb(255, 242, 239) <br>
