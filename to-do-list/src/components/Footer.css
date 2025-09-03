@@ -18,3 +18,16 @@ footer {
 .link {
     margin: 0px;
 }
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: larger;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}

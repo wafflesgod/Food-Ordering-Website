@@ -12,7 +12,7 @@
     justify-content: center;
 }
 
-button {
+.button {
 	display: block;
 	position: relative;
 	padding: 20px 20px;

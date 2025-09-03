@@ -10,7 +10,7 @@ export default function Home() {
             <p style={{fontSize: "18px", paddingBottom: "10px"}}>Experience the finest cuisine from the comfort of your home. <br/> Fresh ingredients, expert chefs, and lightning-fast delivery.</p>
             <div className="button-container">
                 <Link to="/menu">
-                    <button><b>Order Now</b></button>
+                    <button className="button"><b>Order Now</b></button>
                 </Link>
             </div>
         </div>
