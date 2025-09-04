@@ -1,3 +1,5 @@
+import FoodMenu from "../components/FoodMenu";
+
 function Menu() {
   return (
     <div>
@@ -5,15 +7,16 @@ function Menu() {
       <div>
         <ul>
           <li>Malay</li>
-          <li>Chinese
-          </li>
+          <li>Chinese</li>
           <li>Indian</li>
           <li>Western</li>
           <li>Japanese</li>
         </ul>
       </div>
-      <div><h2>Title</h2>
-      <div>card</div></div>
+      <div>
+        <h2>Title</h2>
+      </div>
+      <div>{<FoodMenu />}</div>
     </div>
   );
 }
