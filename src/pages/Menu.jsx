@@ -110,7 +110,7 @@ const Menu = () => {
     ],
     Japanese: [
       {
-        image: "/food/sushi.jpg",
+        image: "/food/sushi-plate.jpg",
         name: "Assorted Sushi Platter",
         description:
           "Fresh selection of nigiri and maki sushi with tuna, salmon, shrimp and vegetables.",

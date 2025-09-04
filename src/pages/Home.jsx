@@ -33,14 +33,14 @@ const dishes = [
         name: "Sushi Plate",
         description: "An assortment of delicate bite-sized rolls and nigiri, combining fresh seafood, rice, and seaweed.",
         price: 24.99,
-        image: "food/sushi_plate.jpg"
+        image: "food/sushi-plate.jpg"
     },
     {
         id: 3,
         name: "idk",
         description: "Malaysia’s signature dish of fragrant coconut rice served with sambal, fried anchovies, peanuts, egg, and cucumber",
         price: 0,
-        image: "food/nasi_lemak.jpg",
+        image: "food/nasi-lemak.jpg",
     },
 ];
 
