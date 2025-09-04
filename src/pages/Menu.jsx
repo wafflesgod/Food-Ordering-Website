@@ -2,7 +2,7 @@ import Card from "../components/Card";
 import { useState } from "react";
 
 const Menu = () => {
-  const [selectedMenu, setSelectedMenu] = useState("malay");
+  const [selectedMenu, setSelectedMenu] = useState("Malay");
   const menus = {
     Malay: [
       {
