@@ -25,7 +25,7 @@ const dishes = [
         id: 1,
         name: "Burger",
         description: "A juicy grilled patty, layered with fresh lettuce, tomato, cheese, and our secret sauces, served in a soft bun.",
-        price: 0,
+        price: 24,
         image: "food/burger.jpg",
     },
     {
@@ -37,9 +37,9 @@ const dishes = [
     },
     {
         id: 3,
-        name: "idk",
+        name: "Nasi Lemak",
         description: "Malaysia’s signature dish of fragrant coconut rice served with sambal, fried anchovies, peanuts, egg, and cucumber",
-        price: 0,
+        price: 12,
         image: "food/nasi_lemak.jpg",
     },
 ];

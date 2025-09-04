@@ -58,10 +58,6 @@
     padding: 0 5px 0 10px;
 }
 
-.navbar-container {
-    width: 100%;
-}
-
 ul {
     list-style: none;
     padding: 0;
@@ -69,7 +65,7 @@ ul {
 
 li {
     display: inline;
-    margin-right: 20px;
+    margin-right: 5px;
 }
 
 a {
@@ -84,3 +80,55 @@ a {
     opacity: 1;
     transition: opacity 0.5s ease;
 }*/
+
+/* Hamburger */
+.hamburger {
+  cursor: pointer;
+  color: white;
+  font-size: 1.8rem;
+  display: none; /* hidden on desktop */
+}
+
+/* Navbar menu */
+.navbar {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+/* Mobile view */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; /* show hamburger */
+  }
+
+  .navbar {
+    display: none; /* hide menu by default */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #333;
+    width: 200px;
+    border-radius: 6px;
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .navbar.active {
+    display: flex; /* show menu when active */
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.cart-btn {
+  border: 1px solid white;
+  border-radius: 6px;
+  padding: 10px 5px;
+}
