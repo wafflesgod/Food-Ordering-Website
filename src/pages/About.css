@@ -11,8 +11,9 @@ h1{
 
 .grid-container {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /*Create 2 equal columns*/
+    display: grid; /*Create 2 equal columns: repeat(2, 1fr) // auto-fill, minmax(300px, 1fr) // auto-fit, minmax(300px, 1fr)*/
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /*auto-fill in minmax mean minimal each column at least 300px
+    max 1fr */
     grid-template-rows: auto; /*rows adjust based on content*/
     gap: 15px 20px; /*space between grid item*/
     font-size: 25px;
@@ -34,7 +35,7 @@ h1{
 .grid-container2 {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /*Create 3 equal columns*/
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*Create 3 equal columns*/
     grid-template-rows: auto; /*rows adjust based on content*/
     gap: 0 20px; /*space between grid item*/
     font-size: 25px;
@@ -56,8 +57,15 @@ h1{
     box-sizing: border-box;
 }
 
+.grid-container2 b {
+    padding-top: 15px;
+}
+
 .grid-container2 > div {
     border-radius: 12px;
     padding: 0px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;  /* so content stacks properly */
+    justify-content: space-between; /* pushes icon to bottom */
 }

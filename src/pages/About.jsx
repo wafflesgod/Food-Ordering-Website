@@ -59,18 +59,20 @@ export default function About() {
             </div>
         </div>
         <div style={{ paddingTop: "70px" }}>
-            <h1>Our Teams</h1>
+            <h1 style={{marginBottom: "15px"}}>Our Teams</h1>
             <div className="grid-container2">
-                <div><b>Member 1</b></div>
-                <div><b>Member 2</b></div>
-                <div><b>Member 3</b></div>
-                <div className="words"><span>Idk what I am doing or learning just playing around with this icons.</span></div>
-                <div className="words"><span>I am so boring so I join this project for dunno.</span></div>
-                <div className="words"><span>Idk I am nothing to do so get invited as well.</span></div>
-
-                <div><FontAwesomeIcon icon={faGhost} bounce size="5x" style={{marginTop: "75px"}}/></div>
-                <div><FontAwesomeIcon icon={faCrow} bounce size="5x" style={{marginTop: "75px"}}/></div>
-                <div><FontAwesomeIcon icon={faDog} bounce size="5x" style={{marginTop: "75px"}}/></div>
+                <div><b>Member 1</b>
+                    <div className="words" style={{maxHeight: "60px"}}><span>Idk what I am doing, just playing around with this icons.</span></div>
+                    <div><FontAwesomeIcon icon={faGhost} bounce size="5x" style={{marginTop: "75px"}}/></div>
+                </div>
+                <div><b>Member 2</b>
+                    <div className="words" style={{maxHeight: "60px"}}><span>I am so boring so I join this project for dunno.</span></div>
+                    <div><FontAwesomeIcon icon={faCrow} bounce size="5x" style={{marginTop: "75px"}}/></div>
+                </div>
+                <div><b>Member 3</b>
+                    <div className="words" style={{maxHeight: "60px"}}><span>Idk I am nothing to do so get invited as well.</span></div>
+                    <div><FontAwesomeIcon icon={faDog} bounce size="5x" style={{marginTop: "75px"}}/></div>
+                </div>
             </div>
         </div>
     </div>
