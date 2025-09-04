@@ -3,6 +3,41 @@
     padding: 20px;
 }
 
+.review {
+    background-color: whitesmoke;
+    width: 100%;
+}
+
+.review-grid {
+    padding: 10px 35px 35px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*Create 3 equal columns*/
+    grid-template-rows: auto; /*rows adjust based on content*/
+    gap: 40px; /*space between grid item*/
+    font-size: 25px;
+}
+
+.review-grid > div {
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.review-grid i {
+    font-family: "Georgia", serif;
+    color: rgb(133, 120, 120);
+    padding-bottom: 20px;
+}
+
+.review-grid b {
+    text-align: right;
+    color: rgb(107, 105, 105);
+}
+
 .button-container {
     display: flex;
 	flex-direction: column;

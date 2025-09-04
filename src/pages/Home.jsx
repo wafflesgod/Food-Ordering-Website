@@ -1,7 +1,25 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+const reviewee = [
+    {
+        id: 1,
+        quote: "The food was absolutely delicious and the delivery was so fast!",
+        author: "Jane Doe",
+    },
+    {
+        id: 2,
+        quote: "I love the variety on the menu. Every dish I've tried has been fantastic.",
+        author: "John Smith",
+    },
+    {
+        id: 3,
+        quote: "My go-to place for a quick and tasty meal. The prices are great too!",
+        author: "Emily Chen",
+    },
+];
+
 export default function Home() {
   return (
     <div style={{marginTop: "-10px"}}>
@@ -16,6 +34,17 @@ export default function Home() {
         </div>
         <div>
             <h2>Featured Dished</h2>
+        </div>
+        <div className="review">
+            <h2>What Our Customer Say</h2>
+            <div className="review-grid">
+                {reviewee.map((review) => ( //reviewee (function name), review (add object to call function)
+                    <div key={review.id}>
+                        <i>"{review.quote}"</i>
+                        <b>- {review.author}</b>
+                    </div>
+                ))}
+            </div>
         </div>
     </div>
 );
