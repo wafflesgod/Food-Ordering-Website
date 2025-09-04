@@ -1,15 +1,67 @@
 .top-container {
     background: linear-gradient(180deg, #5D688A, #F7A5A5, #FFDBB6);
-    padding: 20px;
+    padding: 40px;
 }
 
+.dish-grid {
+    padding: 10px 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr)); /*Create 3 equal columns*/
+    grid-template-rows: auto; /*rows adjust based on content*/
+    gap: 30px; /*space between grid item*/
+    font-size: 20px;
+}
+
+.dish-grid img {
+    width: 450px;
+    height: 350px;
+}
+
+.dish-grid {
+  padding: 10px 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 50px;
+  font-size: 20px;
+}
+
+.dish-card img {
+  width: 100%;             /* take full width of its grid cell */
+  height: 300px;           /* fixed height (you can adjust e.g. 300px) */
+  object-fit: cover;       /* crop the image to fill the box without stretching */
+  object-position: left;
+  border-radius: 8px;      /* optional, rounded corners */
+}
+
+.dish-card p{
+    text-align: left;
+}
+
+.dish-info {
+  display: flex;
+  justify-content: space-between; /* name on left, price on right */
+  align-items: center;
+  margin-top: 10px;
+}
+
+.dish-info b {
+  font-size: 1.2rem;
+}
+
+.dish-info span {
+  font-weight: bold;
+  color: #333;
+}
+
+
 .review {
+    padding-top: 10px;
     background-color: whitesmoke;
     width: 100%;
 }
 
 .review-grid {
-    padding: 10px 35px 35px;
+    padding: 15px 40px 60px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /*Create 3 equal columns*/
     grid-template-rows: auto; /*rows adjust based on content*/
