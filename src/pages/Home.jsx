@@ -20,6 +20,30 @@ const reviewee = [
     },
 ];
 
+const dishes = [
+    {
+        id: 1,
+        name: "Burger",
+        description: "A juicy grilled patty, layered with fresh lettuce, tomato, cheese, and our secret sauces, served in a soft bun.",
+        price: 0,
+        image: "food/burger.jpg",
+    },
+    {
+        id: 2,
+        name: "Sushi Plate",
+        description: "An assortment of delicate bite-sized rolls and nigiri, combining fresh seafood, rice, and seaweed.",
+        price: 24.99,
+        image: "food/sushi_plate.jpg"
+    },
+    {
+        id: 3,
+        name: "idk",
+        description: "Malaysia’s signature dish of fragrant coconut rice served with sambal, fried anchovies, peanuts, egg, and cucumber",
+        price: 0,
+        image: "food/nasi_lemak.jpg",
+    },
+];
+
 export default function Home() {
   return (
     <div style={{marginTop: "-10px"}}>
@@ -33,7 +57,19 @@ export default function Home() {
             </div>
         </div>
         <div>
-            <h2>Featured Dished</h2>
+            <h2>Featured Dishes</h2>
+            <div className="dish-grid">
+                {dishes.map((dish) => (
+                    <div key={dish.id} className="dish-card">
+                        <img src={dish.image} alt={dish.name}/>
+                        <div className="dish-info">
+                            <b>{dish.name}</b>
+                            <span>RM{dish.price.toFixed(2)}</span>
+                        </div>
+                        <p>{dish.description}</p>
+                    </div>
+                ))}
+            </div>
         </div>
         <div className="review">
             <h2>What Our Customer Say</h2>
