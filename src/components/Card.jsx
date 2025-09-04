@@ -1,10 +1,16 @@
+import { Star } from "lucide-react";
+
 const Card = ({
-  image = "placeholder",
-  name = "placeholder",
-  description = "placeholder",
-  price = "RM00",
-  rating = 0,
+  image = "/food/burger.jpg",
+  name = "Yummy Burger",
+  description = "bburgerburgerburgerburgerburgerburgerurger",
+  price = "RM999",
+  rating = 3
 }) => {
+  const handleAddToCart = (e) => {
+    e.stopPropagation();
+    onAddToCard({name, price, image});
+  }
   const renderStars = (rating) => {
     const stars = [];
     const fullStars = Math.floor(rating);
@@ -83,8 +89,10 @@ const Card = ({
           <div className="price">
             <span>{price}</span>
           </div>
+          <button onclick={handleAddToCart}>Add To Cart</button>
         </div>
       </div>
+      <style jsx>{``}</style>
     </div>
   );
 };
