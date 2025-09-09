@@ -9,12 +9,12 @@ const Card = ({
 }) => {
   const handleAddToCart = (e) => {
     e.stopPropagation();
-    alert("yay");
+    handleAddToCart(name, description, price, image);
   };
   const renderStars = (rating) => {
     const stars = [];
     const fullStars = Math.floor(rating);
-    const hasHalfStar = rating % 1 !== 0;
+    const hasHalfStar = rating % 2 !== 0;
 
     for (let i = 0; i < fullStars; i++) {
       stars.push(
