@@ -81,6 +81,26 @@ a {
     transition: opacity 0.5s ease;
 }*/
 
+/* Button */
+.nav-links button {
+    border: none;
+    border-radius: 20px;
+    font-size: 1.2rem;
+    padding: 8px 18px;
+    margin-top: 3px;
+    background-color: lightblue;
+    color: black;
+}
+
+.nav-links button:hover {
+    background-color: blue;
+    color: white;
+}
+
+.nav-links button:hover {
+    /*add css*/
+}
+
 /* Hamburger */
 .hamburger {
   cursor: pointer;

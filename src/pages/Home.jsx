@@ -45,43 +45,43 @@ const dishes = [
 ];
 
 export default function Home() {
-  return (
-    <div style={{marginTop: "-10px"}}>
-        <div className="top-container">
-            <h1>Delicious Food, Delivered Fast</h1>
-            <p style={{fontSize: "18px", paddingBottom: "10px"}}>Experience the finest cuisine from the comfort of your home. <br/> Fresh ingredients, expert chefs, and lightning-fast delivery.</p>
-            <div className="button-container">
-                <Link to="/menu">
-                    <button className="button"><b>Order Now</b></button>
-                </Link>
+    return (
+        <div style={{marginTop: "-10px"}}>
+            <div className="top-container">
+                <h1>Delicious Food, Delivered Fast</h1>
+                <p style={{fontSize: "18px", paddingBottom: "10px"}}>Experience the finest cuisine from the comfort of your home. <br/> Fresh ingredients, expert chefs, and lightning-fast delivery.</p>
+                <div className="button-container">
+                    <Link to="/menu">
+                        <button className="button"><b>Order Now</b></button>
+                    </Link>
+                </div>
             </div>
-        </div>
-        <div>
-            <h2>Featured Dishes</h2>
-            <div className="dish-grid">
-                {dishes.map((dish) => (
-                    <div key={dish.id} className="dish-card">
-                        <img src={dish.image} alt={dish.name}/>
-                        <div className="dish-info">
-                            <b>{dish.name}</b>
-                            <span>RM{dish.price.toFixed(2)}</span>
+            <div>
+                <h2>Featured Dishes</h2>
+                <div className="dish-grid">
+                    {dishes.map((dish) => (
+                        <div key={dish.id} className="dish-card">
+                            <img src={dish.image} alt={dish.name}/>
+                            <div className="dish-info">
+                                <b>{dish.name}</b>
+                                <span>RM{dish.price.toFixed(2)}</span>
+                            </div>
+                            <p>{dish.description}</p>
                         </div>
-                        <p>{dish.description}</p>
-                    </div>
-                ))}
+                    ))}
+                </div>
+            </div>
+            <div className="review">
+                <h2>What Our Customer Say</h2>
+                <div className="review-grid">
+                    {reviewee.map((review) => ( //reviewee (function name), review (add object to call function)
+                        <div key={review.id}>
+                            <i>"{review.quote}"</i>
+                            <b>- {review.author}</b>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
-        <div className="review">
-            <h2>What Our Customer Say</h2>
-            <div className="review-grid">
-                {reviewee.map((review) => ( //reviewee (function name), review (add object to call function)
-                    <div key={review.id}>
-                        <i>"{review.quote}"</i>
-                        <b>- {review.author}</b>
-                    </div>
-                ))}
-            </div>
-        </div>
-    </div>
-);
+    );
 }
