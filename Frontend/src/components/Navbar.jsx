@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -42,8 +42,15 @@ const Navbar = () => {
                     <li><Link to="/about" className="logo"><FontAwesomeIcon icon={faCircleInfo} />About</Link></li>
                     <li><Link to="/contact" className="logo"><FontAwesomeIcon icon={faPhone} />Contact</Link></li>
                     <li><Link to="/home" className="logo"><FontAwesomeIcon icon={faCartShopping} />Cart</Link></li>
-                    <li><Link to="/login" className="liquid">Login</Link></li>
-                    <li><Link to="/signup" className="liquid">Sign Up</Link></li>
+                    
+                    {username ? (
+                        <li className="user-name">Welcome,{username}</li>
+                    ): (
+                        <>
+                            <li><Link to="/login" className="liquid">Login</Link></li>
+                            <li><Link to="/signup" className="liquid">Sign Up</Link></li>
+                        </>
+                    )}
                 </ul>
             </nav>
         </div>
