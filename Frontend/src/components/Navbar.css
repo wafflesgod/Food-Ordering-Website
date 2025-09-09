@@ -83,22 +83,52 @@ a {
 
 /* Button */
 .nav-links button {
-    border: none;
-    border-radius: 20px;
-    font-size: 1.2rem;
-    padding: 8px 18px;
-    margin-top: 3px;
-    background-color: lightblue;
-    color: black;
-}
-
-.nav-links button:hover {
-    background-color: blue;
+    position: relative;
+    padding: 8px 14px;
+    font-size: 1rem;
+    font-weight: 600;
     color: white;
+    background: none;
+    border: 2px solid #646cff;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
-.nav-links button:hover {
-    /*add css*/
+.liquid {
+    display: inline-block;
+    position: relative;
+    padding: 6px 14px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    border: 2px solid #646cff;
+    border-radius: 20px;
+    cursor: pointer;
+    overflow: hidden; /*make sure the liquid wont spill out*/
+    z-index: 1; /*keeps button text above the background (layer)*/
+    text-decoration: none; /* remove underline from <Link> */
+}
+
+.liquid::before { /*acts as liquid background layer*/
+  content: "";
+  position: absolute;
+  bottom: 0; /*bottom 0 mean it will fill from bottom ; top 0 mean it will fill from top*/
+  left: 0;
+  width: 100%;
+  height: 0%; /*when u no hover it, the liquid height is 0% mean hidden*/
+  background: #646cff;
+  z-index: -1;
+  transition: height 0.4s ease; /*smooth animation when height changes*/
+}
+
+.liquid:hover::before { /*on hover*/
+  height: 100%; /*then u hover it the liquid show*/
+}
+
+.liquid:hover {
+  color: white;
 }
 
 /* Hamburger */
@@ -117,6 +147,7 @@ a {
 .nav-links {
   display: flex;
   gap: 10px;
+  align-items: center;
 }
 
 /* Mobile view */
