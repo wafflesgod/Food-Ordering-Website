@@ -4,8 +4,9 @@ this is an undone project<br>
 - login, signup
 - add to cart function, calculate function
 <br>
+
 mobile view <br>
-- header 
+- header
 - home
 <br>
 
