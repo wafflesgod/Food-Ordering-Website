@@ -1,11 +1,13 @@
-# To-do-list-React
+# Food Ordering System
 
-hi is me, huiming typing here
-trying 2 (huiming)
-hello <br>
-
-hhhhh
-hahahah
+this is an undone project<br>
+- login, signup
+- add to cart function, calculate function
+<br>
+mobile view <br>
+- header 
+- home
+<br>
 
 Color Platte: https://colorhunt.co/palette/5d688af7a5a5ffdbb6fff2ef <br>
 Navy: #5D688A //rgb(93, 104, 138) <br>
