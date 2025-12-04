@@ -16,7 +16,7 @@ const Navbar = () => {
 
     // Fetch logged-in user info
     useEffect(() => {
-        axios.get("http://localhost:5000/users/1")  // 👈 just example: get user with id=1
+        axios.get("https://food-ordering-website-340s.onrender.com")  // 👈 just example: get user with id=1
             .then(res => {
                 if (res.data && res.data.name) {
                     setUsername(res.data.name);
